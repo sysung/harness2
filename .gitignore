@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.local/
+personal_skills/
+backup_skills/
+.codex/
+auth.json
+runs/
+dependencies/
+__pycache__/
+.venv/
+.DS_Store

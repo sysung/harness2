@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+.local
+personal_skills
+backup_skills
+.codex
+**/auth.json
+runs
+dependencies
+__pycache__
+.venv

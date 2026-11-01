@@ -1,0 +1,17 @@
+services:
+  lab:
+    build: .
+    image: sysung-harness2:local
+    init: true
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./runs:/workspace/runs
+      - ./personal_skills:/home/researcher/.codex/skills
+      - codex-auth:/home/researcher/.codex
+    working_dir: /workspace
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+
+volumes:
+  codex-auth:
